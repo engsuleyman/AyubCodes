@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyubCodes | Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>AyubCodes</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <img src="images/Ayub.jpg" alt="Your Name">
+      <h2>About Me</h2>
+      <p>Welcome to my page! I'm AyubCodes, a passionate web developer with expertise in HTML, CSS, and JavaScript. With a keen eye for design and a love for clean, efficient code, I strive to create engaging and user-friendly websites that leave a lasting impression. Whether it's crafting elegant layouts with HTML and CSS or adding interactivity and functionality with JavaScript, I'm dedicated to bringing ideas to life on the web. Join me on this journey as we explore the exciting world of web development together!</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="https://nflowtech.com/insights/wp-content/uploads/2023/09/eCommerce-Development-Checklist.png" alt="Project 1 Thumbnail">
+        <h3>Asturan Labis</h3>
+        <p>Asturan Labis is a women's fashion store</p>
+        <a href="../asturan labis final/Asturan.html">View Details</a>
+      </div>
+      <div class="project">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDhLJ5C3WrS5Zy5PYXmKD77cVc_WPKGyG0E2FgyICHw&s" alt="Project 2 Thumbnail">
+        <h3>Project 2</h3>
+        <p>Weather App</p>
+        <a href="../Weather App/SulChat.html">View Details</a>
+      </div>
+      <div class="project">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDFYJ6CCaCO7LLe2Nd0eV1lFmILBXUWZn3xH0bUAhSDR6i8JBgqiqsK27JdfHHhWeYso&usqp=CAU" alt="Project 3 Thumbnail">
+        <h3>Project 3</h3>
+        <p>Quiz Game</p>
+        <a href="../Quiz Game/game.html">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Got a project in mind or just want to say hi? Feel free to get in touch!</p>
+      
+      <!-- Contact Form -->
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" onclick="submitMessage()">Send Message</button>
+      </form>
+  
+      <!-- Message for users -->
+      <p id="submission-message" style="display: none; color: rgb(255, 64, 64);">Thank you for your message! Please either contact me from the options below, as the form submission is not functional at the moment.</p>
+  
+      <!-- Links to Email, GitHub, and LinkedIn -->
+      <div class="contact-links">
+        <a href="mailto:ayubsaeed35@gmail.com">
+          <img src="images/gmail new.png" alt="email Logo" >
+        </a>
+        <!-- <a href="https://github.com/engsuleyman/AyubCodes">
+          <img src="images/github.png" alt="GitHub Logo">
+        </a> -->
+        <a href="https://www.linkedin.com/in/ayub-suleiman-28aa71166/">
+          <img src="images/linkedin.png" alt="LinkedIn Logo">
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function submitMessage() {
+      document.getElementById("submission-message").style.display = "block";
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
